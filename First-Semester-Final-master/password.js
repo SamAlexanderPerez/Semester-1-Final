@@ -23,7 +23,12 @@ class Password{
 
   //Static function below this comment.
   static makePrivateKey(){
-    let key=
+    let key="";
     let limit=14;
+    for(let n=0;n<14;n++;){
+      let r=Math.random()*10;
+      if()
+    }
+    return key;
   }
 }

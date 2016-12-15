@@ -5,7 +5,6 @@ class Item{
     this.price=p;//dollars and cents
     this.shipping=s;//in days
   }
-
 }
 
 //Create your three test items below this comment.
