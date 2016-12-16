@@ -17,17 +17,25 @@ class Password{
   }
 
   validPrivateKey(){
-    let set1=this.privtekey.substring(0,4);
-    let set2=this.privatekey.substring(5,9);
-    let set3=this.privatekey.substring(10,14);
-    if(this.privatekey.charAt(4)=="-" && this.privatekey.charAt(9)=="-"){
-      return true;
+
+    for(let p=0;p<this.privatekey.length;p++){
+    if(this.privatekey.charAt(4)!="-" && this.privatekey.charAt(9)!="-"){
+        return false;
     }
-    if()
-    else{
+    else if(Number.isNaN(Number(this.privatekey.substring(0,4)))){
+      return false;
+    }
+    else if(Number.isNaN(Number(this.privatekey.substring(5,9)))){
+      return false;
+    }
+    else if(Number.isNaN(Number(this.privatekey.substring(10,14)))){
       return false;
     }
 
+    else{
+      return true;
+    }
+  }
   }
 
 
